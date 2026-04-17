@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dytomic | Pirate Raids Online — Old-School MMORPG for PC</title>
+  <meta name="description" content="Dytomic was an independent game studio behind Pirate Raids Online (PRO), an old-school inspired MMORPG set in Ascaron. Play as a Demigod — Dwarf, Triton, Runeborne, or Amazonian — and lead the Pirate Coalition against the tyrannical Navy." />
+  <meta name="keywords" content="Pirate Raids Online, PRO MMORPG, Dytomic, Ascaron, Tales of Pirates, PKO, Pirate King Online, MMORPG PC, old school MMORPG, Demigod, Pirate Coalition, private server" />
+  <link rel="canonical" href="https://dytomic.github.io/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://dytomic.github.io/" />
+  <meta property="og:title" content="Dytomic | Pirate Raids Online — Old-School MMORPG for PC" />
+  <meta property="og:description" content="Dytomic was an independent game studio behind Pirate Raids Online (PRO), an old-school inspired MMORPG set in Ascaron. Play as a Demigod and lead the Pirate Coalition against the tyrannical Navy." />
+  <meta property="og:image" content="https://dytomic.github.io/preview.jpg" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Dytomic | Pirate Raids Online — Old-School MMORPG for PC" />
+  <meta name="twitter:description" content="Old-school inspired MMORPG for PC. Play as a Demigod — Dwarf, Triton, Runeborne, or Amazonian — and defend Ascaron from the new world order." />
+  <meta name="twitter:image" content="https://dytomic.github.io/preview.jpg" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "VideoGame",
+    "name": "Pirate Raids Online",
+    "alternateName": "PRO",
+    "description": "An old-school inspired MMORPG for PC set in the world of Ascaron, where Demigods lead the Pirate Coalition against the tyrannical Navy.",
+    "genre": ["MMORPG", "Role-playing game", "Action"],
+    "gamePlatform": "PC",
+    "developer": {
+      "@type": "Organization",
+      "name": "Dytomic",
+      "url": "https://dytomic.github.io"
+    },
+    "url": "https://dytomic.github.io"
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --gold: #c9a84c;
+      --gold-light: #e8c97a;
+      --dark: #0d0d0d;
+      --dark-2: #141414;
+      --dark-3: #1a1a1a;
+      --text: #d4c9b0;
+      --text-muted: #8a8070;
+      --max-width: 960px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      background: var(--dark);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { color: var(--gold-light); text-decoration: underline; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(13,13,13,0.95);
+      border-bottom: 1px solid #2a2a2a;
+      padding: 0 24px;
+    }
+    .nav-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 56px;
+      gap: 16px;
+    }
+    .nav-brand { font-size: 1.1rem; font-weight: bold; color: var(--gold); letter-spacing: 0.1em; }
+    .nav-links { display: flex; gap: 24px; list-style: none; flex-wrap: wrap; }
+    .nav-links a { font-size: 0.85rem; color: var(--text-muted); letter-spacing: 0.05em; text-transform: uppercase; }
+    .nav-links a:hover { color: var(--gold); text-decoration: none; }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(160deg, #0d0d0d 0%, #1a1208 50%, #0d0d0d 100%);
+      border-bottom: 1px solid #2a2200;
+      padding: 96px 24px 80px;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 3.5rem);
+      color: var(--gold);
+      letter-spacing: 0.05em;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+    .hero-sub {
+      font-size: clamp(1rem, 2.5vw, 1.25rem);
+      max-width: 680px;
+      margin: 0 auto 40px;
+      color: var(--text);
+      font-style: italic;
+    }
+    .badge-row {
+      display: flex; gap: 12px; flex-wrap: wrap; justify-content: center; margin-bottom: 40px;
+    }
+    .badge {
+      background: #1a1a1a; border: 1px solid #333;
+      padding: 6px 14px; border-radius: 4px;
+      font-size: 0.8rem; color: var(--text-muted); font-family: monospace;
+    }
+    .status-archived {
+      display: inline-block;
+      background: #1f1200; border: 1px solid var(--gold);
+      color: var(--gold); padding: 8px 20px; border-radius: 4px;
+      font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase;
+    }
+
+    /* SECTIONS */
+    section { padding: 72px 24px; border-bottom: 1px solid #1e1e1e; }
+    section:nth-child(even) { background: var(--dark-2); }
+    .section-inner { max-width: var(--max-width); margin: 0 auto; }
+
+    h2 {
+      font-size: clamp(1.4rem, 3vw, 2rem);
+      color: var(--gold);
+      margin-bottom: 8px;
+      letter-spacing: 0.04em;
+    }
+    .section-label {
+      font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase;
+      letter-spacing: 0.15em; margin-bottom: 24px;
+    }
+    h3 { font-size: 1.15rem; color: var(--gold-light); margin-bottom: 8px; }
+    p { margin-bottom: 16px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    .lede {
+      font-size: 1.1rem; font-style: italic;
+      border-left: 3px solid var(--gold);
+      padding-left: 20px; margin-bottom: 32px;
+      color: var(--text);
+    }
+
+    /* GRID */
+    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px; }
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 32px; }
+    .card {
+      background: var(--dark-3); border: 1px solid #2a2a2a;
+      border-radius: 6px; padding: 24px;
+    }
+    .card h3 { margin-bottom: 10px; }
+
+    /* RACES */
+    .races-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 32px; }
+    .race-card {
+      background: var(--dark-3); border: 1px solid #2a2a2a;
+      border-radius: 6px; padding: 24px; border-top: 3px solid var(--gold);
+    }
+
+    /* TABLE */
+    table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 0.95rem; }
+    th { text-align: left; padding: 10px 14px; color: var(--gold); border-bottom: 1px solid #333; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em; }
+    td { padding: 10px 14px; border-bottom: 1px solid #1e1e1e; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    td:first-child { white-space: nowrap; }
+
+    /* FOOTER */
+    footer {
+      padding: 40px 24px; text-align: center;
+      font-size: 0.85rem; color: var(--text-muted);
+      border-top: 1px solid #1e1e1e;
+    }
+    footer a { color: var(--text-muted); }
+    footer a:hover { color: var(--gold); }
+
+    @media (max-width: 600px) {
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+<nav aria-label="Site navigation">
+  <div class="nav-inner">
+    <span class="nav-brand">DYTOMIC</span>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#story">Story</a></li>
+      <li><a href="#races">Races</a></li>
+      <li><a href="#world">World</a></li>
+      <li><a href="#combat">Combat</a></li>
+      <li><a href="#ships">Ships</a></li>
+      <li><a href="#features">Features</a></li>
+      <li><a href="#pko-research">PKO Research</a></li>
+      <li><a href="#source">Source</a></li>
+    </ul>
+  </div>
+</nav>
+
+<header class="hero">
+  <h1>Pirate Raids Online</h1>
+  <p class="hero-sub">An old-school inspired MMORPG for PC. Play as a Demigod and lead the Pirate Coalition in a rebellion against the tyrannical forces of The Navy. Defend Ascaron from the new world order.</p>
+  <div class="badge-row">
+    <span class="badge">PC MMORPG</span>
+    <span class="badge">Old-School</span>
+    <span class="badge">Classless Combat</span>
+    <span class="badge">Open World PvP</span>
+    <span class="badge">Naval Combat</span>
+    <span class="badge">4 Playable Races</span>
+  </div>
+  <span class="status-archived">Studio Archived — Code is Public</span>
+</header>
+
+<main>
+
+  <section id="about">
+    <div class="section-inner">
+      <div class="section-label">The Studio</div>
+      <h2>About Dytomic</h2>
+      <p class="lede">Independent game development studio formerly based in Montreal, Quebec.</p>
+      <p>Dytomic was founded to build Pirate Raids Online — a PC MMORPG drawing from the classic Tales of Pirates / Pirate King Online (PKO) engine heritage, reimagined with modern design expectations. The studio operated from 2021 through early 2024 before ceasing operations.</p>
+      <p>All repositories are now public and archived. The code, art direction, and game design of Pirate Raids Online remain browsable as an open technical record.</p>
+    </div>
+  </section>
+
+  <section id="story">
+    <div class="section-inner">
+      <div class="section-label">Lore</div>
+      <h2>Defend Ascaron from the New World Order</h2>
+      <p class="lede">A tyrant regime known as The Navy seeks to burn, pillage, and capture all within reach of their expanding empire.</p>
+      <p>Their conquest stretches outwards into the seas and islands of Ascaron, wreaking havoc and threatening all who stand in the way of their new world order. A group of rebels and freedom fighters have taken up arms against the merciless tyrants — but to no avail.</p>
+      <p>However, there is still hope. As ancient prophecies once foretold, the unification of the Soulstones shall fulfill a sacred primordial ritual and give rise to the divine summoning of Elefrihet — the almighty god of justice and supreme patron of Ascaron. In a collective effort to end The Navy's conquest, the rebellion established <strong>The Pirate Coalition</strong>: an alliance between the pirate tribes of men seeking to reunite the Demigods, now lost to time and isolation, to fulfill the ancient prophecy and save humanity from annihilation.</p>
+    </div>
+  </section>
+
+  <section id="races">
+    <div class="section-inner">
+      <div class="section-label">Playable Races</div>
+      <h2>The Four Demigod Tribes of Ascaron</h2>
+      <p class="lede">Over a thousand years ago, Elefrihet, the god of justice and patron of Ascaron, created a race of Demigods to defend humanity against the forces of Torantika, goddess of death.</p>
+      <div class="races-grid">
+        <article class="race-card">
+          <h3>Dwarves</h3>
+          <p>Endowed with dominion and guardianship over the mountains of Ascaron. Their defensive tactics and expertise in fortifying structures pose a great threat to Navy invasions.</p>
+        </article>
+        <article class="race-card">
+          <h3>Triton</h3>
+          <p>Inhabitants and guardians of the seas, ensuring dark evil shall never again plague the waters of Ascaron. Expert shipbuilders and masters of the sea with nautical prowess that intimidates even the highest ranked Navy captains.</p>
+        </article>
+        <article class="race-card">
+          <h3>Runeborne</h3>
+          <p>Wardens of the tundras and forests of Ascaron. Their ferocity and ruthlessness in battle threatens the safety and security of Navy encampments throughout the land.</p>
+        </article>
+        <article class="race-card">
+          <h3>Amazonians</h3>
+          <p>Equipped with predatory instincts that enhance their agility and swiftness, the Amazonian Demigods are silent killers feared by all — lethal protectors of the jungle.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="world">
+    <div class="section-inner">
+      <div class="section-label">Gameplay</div>
+      <h2>Explore a Dynamic World on Both Land and Sea</h2>
+      <p class="lede">Whether on land or sea, the world of Ascaron is abundant with wildlife and rich in resources.</p>
+      <p>Master the pioneered skills of the Demigods and gather a wide range of materials to improve weapons, equipment, ships, and structures to strengthen the might of The Pirate Coalition. Set sail on your very own ship and travel to islands and continents where you can seek prized goods and ancient treasures, raid Navy encampments, or test your mettle with fellow pirates.</p>
+      <div class="grid-2">
+        <article class="card">
+          <h3>PvE</h3>
+          <p>The tyrannical actions of The Navy have tainted Ascaron with dark forces and energies not seen for thousands of years. Deadly dungeons from the days of old are resurfacing, and mythical monsters are laying waste to island inhabitants.</p>
+        </article>
+        <article class="card">
+          <h3>PvP</h3>
+          <p>The Pirate Coalition welcomes its members to engage in competition. Hone your skills and prove your might among fellow pirates in risk-based PvP arenas and territories to compete for glory and prized rewards.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="combat">
+    <div class="section-inner">
+      <div class="section-label">Combat System</div>
+      <h2>Master Your Skills in a Unique Classless Combat System</h2>
+      <p class="lede">The Pirate Coalition does not discriminate over the style of combat you wish to use — so long as it brings destruction to the Navy.</p>
+      <p>Master up to 10 weapon builds featuring unique combat styles and ability trees. For fighters seeking a more versatile experience, combine 1-handed weapons with off-hand gear or other weapon types to create hybrid combat builds.</p>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Melee</h3>
+          <p>Sharpen your skills in close-range combat and become a fierce warrior in the Pirate Coalition.</p>
+        </article>
+        <article class="card">
+          <h3>Ranged</h3>
+          <p>Hone your skills in ranged combat and become an apex predator in the Pirate Coalition.</p>
+        </article>
+        <article class="card">
+          <h3>Magic</h3>
+          <p>Master various disciplines of magic combat and become a sacred acolyte in the Pirate Coalition.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="ships">
+    <div class="section-inner">
+      <div class="section-label">Naval Combat</div>
+      <h2>Sail to New Horizons</h2>
+      <p class="lede">The Demigods have perfected seafaring for thousands of years, with each tribe having developed their own take on ship mastery.</p>
+      <p>Your journey at sea begins once you prove yourself capable of constructing your own ship that appropriately honours the Demigods of your tribe. Once at sea, become a ship master by improving your skills in combat, exploration, fishing, and constructing ship upgrades.</p>
+    </div>
+  </section>
+
+  <section id="features">
+    <div class="section-inner">
+      <div class="section-label">Game Systems</div>
+      <h2>Additional Features</h2>
+      <div class="grid-3">
+        <article class="card">
+          <h3>Pets</h3>
+          <p>Track down and tame wondrous creatures of Ascaron. Useful as helpers on your journey or flaunted by your side as adornments.</p>
+        </article>
+        <article class="card">
+          <h3>Mounts</h3>
+          <p>Bond or break beasts at the Amberock Stables. Travel far and wide on the lands of Ascaron to serve the Pirate Coalition more efficiently.</p>
+        </article>
+        <article class="card">
+          <h3>Life Skills</h3>
+          <p>Master the ancient crafts of the Demigods. Supply the Coalition's demand for weapons, equipment, and resources across up to 10 unique life skills.</p>
+        </article>
+        <article class="card">
+          <h3>Player-Driven Economy</h3>
+          <p>Free trade among pirates with supply and demand dictated by the needs and wants of the Pirate Coalition — contrary to the will of the Navy.</p>
+        </article>
+        <article class="card">
+          <h3>In-Game Trading</h3>
+          <p>Whether on the road or at the famous Pirate Exchange, trade or exchange goods with fellow pirates and enter trade auctions.</p>
+        </article>
+        <article class="card">
+          <h3>Guild System</h3>
+          <p>Old-school MMORPG guild mechanics — guild wars, territory control, and coordinated raid encounters against the Navy.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="pko-research">
+    <div class="section-inner">
+      <div class="section-label">Open Source Research</div>
+      <h2>Tales of Pirates and PKO Development Archives</h2>
+      <p class="lede">Pirate Raids Online was built on deep research into the Tales of Pirates (TOP) and Pirate King Online (PKO) engine. Those findings are preserved here as open-source monorepo mirrors.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Repository</th>
+            <th>Contents</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/Dytomic/pkodev-V3ct0r1024" target="_blank" rel="noopener">pkodev-V3ct0r1024</a></td>
+            <td>42 open-source Tales of Pirates client mods, server plugins, and tools by V3ct0r1024 — including the PKOdev mod loader, 60fps fix, anti-bot, offline stall server, GM utilities, and player-facing UI enhancements.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/Dytomic/pkodev-Perseus" target="_blank" rel="noopener">pkodev-Perseus</a></td>
+            <td>Server infrastructure and web projects by Perseus — GateServer rewrite in Rust, DDoS-filtering proxy, Go server comms interface, Laravel private server CMS, and JavaScript CMS.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top:20px; font-size:0.9rem; color: var(--text-muted);">All repos are maintained as git subtrees and can be synced against their upstream sources independently.</p>
+    </div>
+  </section>
+
+  <section id="source">
+    <div class="section-inner">
+      <div class="section-label">Open Source</div>
+      <h2>All Code is Public</h2>
+      <p class="lede">Dytomic has shut down. All repositories are archived and open to the public.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>Repository</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><a href="https://github.com/Dytomic/pro-web" target="_blank" rel="noopener">pro-web</a></td>
+            <td>Official marketing website for Pirate Raids Online. Next.js 12, React 18, React Bootstrap, CSS Modules.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/Dytomic/pro-splash" target="_blank" rel="noopener">pro-splash</a></td>
+            <td>Early splash page for PRO linking to social media. React with iOS-tuned layout.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/Dytomic/ariel" target="_blank" rel="noopener">ariel</a></td>
+            <td>Facebook Messenger chatbot for Dytomic's page. Node.js. Named in memory of a co-founder's beloved dog.</td>
+          </tr>
+          <tr>
+            <td><a href="https://github.com/Dytomic/ball-simulation" target="_blank" rel="noopener">ball-simulation</a></td>
+            <td>Live technical interview starter for game-developer candidates. Browser-based physics sandbox with a stubbed <code>checkCollisions()</code> call for candidates to extend.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>
+    <a href="https://github.com/Dytomic" target="_blank" rel="noopener">github.com/Dytomic</a>
+    &nbsp;&middot;&nbsp;
+    Dytomic &copy; 2021&ndash;2024. Studio archived. All rights reserved.
+  </p>
+</footer>
+
+</body>
+</html>
