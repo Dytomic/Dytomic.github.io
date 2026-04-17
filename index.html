@@ -410,6 +410,43 @@
     }
     .notice strong { color: var(--gold); font-weight: 700; }
 
+    /* ── EXPERTISE CTA ── */
+    .expertise-card {
+      background: linear-gradient(135deg, rgba(239,157,23,0.15) 0%, rgba(239,157,23,0.05) 100%);
+      border: 1px solid var(--gold);
+      border-radius: 4px;
+      padding: 40px 36px;
+      position: relative;
+      overflow: hidden;
+    }
+    .expertise-card::before {
+      content: ''; position: absolute; top: -20px; right: -20px;
+      width: 120px; height: 120px;
+      background: radial-gradient(circle, rgba(239,157,23,0.2) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .expertise-card p { color: var(--off-white); line-height: 1.75; position: relative; }
+    .expertise-card p strong { color: var(--gold); }
+    .expertise-cta {
+      margin-top: 24px;
+      display: flex; gap: 14px; flex-wrap: wrap;
+      position: relative;
+    }
+    .expertise-cta a {
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 12px 22px;
+      background: var(--gold); color: var(--white);
+      font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 13px;
+      letter-spacing: 0.08em; text-transform: uppercase;
+      border-radius: 4px;
+      transition: background 0.2s ease-in-out;
+    }
+    .expertise-cta a:hover { background: var(--gold-hover); filter: none; color: var(--white); text-decoration: none; }
+    .expertise-cta a.secondary {
+      background: transparent; border: 1px solid var(--gold); color: var(--gold);
+    }
+    .expertise-cta a.secondary:hover { background: var(--gold); color: var(--white); }
+
     /* ── TEAM PHOTO ── */
     .team-photo {
       max-width: 600px; margin: 0 auto 36px;
@@ -508,6 +545,7 @@
       <li><a href="#game">Game</a></li>
       <li><a href="#repos">Public Code</a></li>
       <li><a href="#research">Research</a></li>
+      <li><a href="#expertise">Expertise</a></li>
     </ul>
   </div>
 </nav>
@@ -745,6 +783,27 @@
     </div>
   </section>
 
+  <div class="separator">
+    <div class="line"></div>
+    <div class="diamond" aria-hidden="true"></div>
+    <div class="title" id="expertise">Expertise</div>
+    <div class="diamond" aria-hidden="true"></div>
+    <div class="line"></div>
+  </div>
+
+  <section>
+    <div class="section-inner">
+      <div class="expertise-card">
+        <p>Throughout the studio&rsquo;s operation, Dytomic built <strong>deep practical expertise using AI to streamline art delivery</strong> &mdash; accelerating concept iteration, enforcing style consistency across large asset sets, and integrating AI-assisted workflows into game-ready art production pipelines. That accumulated knowledge remains with the founders.</p>
+        <p><strong>If you&rsquo;re exploring AI-driven art pipelines for your studio, product, or team, reach out to Tommy or Mourad directly.</strong></p>
+        <div class="expertise-cta">
+          <a href="https://www.linkedin.com/in/tommy-roumanas" target="_blank" rel="noopener">Contact Tommy &rarr;</a>
+          <a class="secondary" href="https://www.linkedin.com/in/mourad-elsheraey" target="_blank" rel="noopener">Contact Mourad &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
 </main>
 
 <footer>
@@ -755,6 +814,7 @@
     <a href="#game">Game</a>
     <a href="#repos">Public Code</a>
     <a href="#research">Research</a>
+    <a href="#expertise">Expertise</a>
     <a href="https://github.com/Dytomic" target="_blank" rel="noopener">GitHub</a>
   </nav>
   <div class="footer-copy">

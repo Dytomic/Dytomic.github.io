@@ -28,6 +28,10 @@ Pirate Raids Online is built on Dytomic's own in-house engine. It is not based o
 
 Separately from the game, Dytomic maintained a body of independent research into the Tales of Pirates (TOP) / Pirate King Online (PKO) engine family and its long-running community modification ecosystem. This was a subject of personal and team interest and is preserved publicly as a reference for researchers of legacy MMORPG engines and private-server communities. The research archive is not a technical lineage of Pirate Raids Online; PRO is a separate product with its own engine.
 
+## Available expertise (AI-driven art pipelines)
+
+Throughout the studio's operation, Dytomic built deep practical expertise using AI to streamline art delivery — accelerating concept iteration, enforcing style consistency across large asset sets, and integrating AI-assisted workflows into game-ready art production pipelines. That accumulated knowledge remains with the founders and is available for consulting or advisory engagements. Interested parties should reach out to Tommy Roumanas (https://www.linkedin.com/in/tommy-roumanas) or Mourad Elsheraey (https://www.linkedin.com/in/mourad-elsheraey) directly.
+
 ## Public code (subset only)
 
 The majority of Dytomic's codebase remains private. The following repositories represent only the publicly released subset:

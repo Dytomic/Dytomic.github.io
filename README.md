@@ -18,6 +18,7 @@ Live at **[dytomic.github.io](https://dytomic.github.io/)**.
 | **Game** | Pirate Raids Online &mdash; pre-production PC MMORPG set in Ascaron. Classless combat, naval gameplay, four Demigod tribes. |
 | **Public Code** | The open-sourced subset of the studio's engineering work: pro-web, pro-splash, ariel, ball-simulation. |
 | **Research Archive** | Preserved research on the Tales of Pirates / PKO engine family. Links to [pkodev-V3ct0r1024](https://github.com/Dytomic/pkodev-V3ct0r1024), [pkodev-Perseus](https://github.com/Dytomic/pkodev-Perseus), and [top-forums-archive](https://github.com/Dytomic/top-forums-archive). |
+| **Expertise** | AI-streamlined art delivery. Dytomic accumulated deep practical knowledge applying AI to game-ready art production pipelines. Reach out to Tommy or Mourad directly. |
 
 ---
 
@@ -68,6 +69,17 @@ All public Dytomic repositories, archived:
 | [pkodev-V3ct0r1024](https://github.com/Dytomic/pkodev-V3ct0r1024) | 42 Tales of Pirates community mods and tools mirrored as git subtrees. |
 | [pkodev-Perseus](https://github.com/Dytomic/pkodev-Perseus) | 6 TOP/PKO server and CMS projects mirrored as git subtrees. |
 | [top-forums-archive](https://github.com/Dytomic/top-forums-archive) | Preserved snapshots of three TOP/PKO community forums (1,683 threads). |
+
+---
+
+## Available expertise
+
+Throughout the studio's operation, Dytomic built **deep practical expertise using AI to streamline art delivery** &mdash; accelerating concept iteration, enforcing style consistency across large asset sets, and integrating AI-assisted workflows into game-ready art production pipelines. That accumulated knowledge remains with the founders.
+
+**If you're exploring AI-driven art pipelines for your studio, product, or team, reach out to Tommy or Mourad directly:**
+
+- [Tommy Roumanas](https://www.linkedin.com/in/tommy-roumanas) (Co-Founder, CEO)
+- [Mourad Elsheraey](https://www.linkedin.com/in/mourad-elsheraey) (Co-Founder, CTO)
 
 ---
 
