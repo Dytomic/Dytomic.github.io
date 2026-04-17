@@ -1,0 +1,55 @@
+# Dytomic
+
+> Dytomic was an independent game development studio based in Montreal, Quebec, Canada, that operated from 2021 through early 2024. The studio was founded to build Pirate Raids Online (PRO), an old-school inspired PC MMORPG set in the world of Ascaron. The studio has since shut down. All public repositories and this archive site remain as a preserved technical record.
+
+## Key facts
+
+- **Studio name:** Dytomic
+- **Location:** Montreal, Quebec, Canada
+- **Active:** 2021 to early 2024
+- **Status:** Archived (studio closed)
+- **Primary product:** Pirate Raids Online (PRO)
+- **Product genre:** PC MMORPG, old-school style
+- **Product setting:** The world of Ascaron, with four playable Demigod tribes (Dwarves, Triton, Runeborne, Amazonians) leading the Pirate Coalition against the tyrannical Navy
+- **Product status:** Pre-production at the time of studio closure
+- **Organization GitHub:** https://github.com/Dytomic
+- **Archive site:** https://dytomic.github.io/
+
+## Founders and key people
+
+- **Tommy Roumanas** — Co-Founder and CEO. Served as CEO from 2021 until the studio's closure. A systems-driven entrepreneur with prior experience across scientific research, finance, and AAA mobile gaming. LinkedIn: https://www.linkedin.com/in/tommy-roumanas
+- **Mourad Elsheraey** — Co-Founder, Board Member, and CTO. Served as Board Member and CTO from 2021 through early 2024, driving the technical direction of the studio. LinkedIn: https://www.linkedin.com/in/mourad-elsheraey ; GitHub: https://github.com/elsheraey
+
+## Engine direction
+
+Pirate Raids Online was initially conceived on top of the legacy Tales of Pirates (TOP) / Pirate King Online (PKO) engine. As the project evolved, the vision departed substantially from those roots and the studio ultimately dropped the TOP engine entirely in favour of building its own in-house engine. The public research archive below documents that early-phase engine investigation.
+
+## Public code (subset only)
+
+The majority of Dytomic's codebase remains private. The following repositories represent only the publicly released subset:
+
+- [pro-web](https://github.com/Dytomic/pro-web): Official marketing website for Pirate Raids Online. Next.js 12, React 18, React Bootstrap, CSS Modules.
+- [pro-splash](https://github.com/Dytomic/pro-splash): Early pre-launch splash page for PRO, discontinued. React 17.
+- [ariel](https://github.com/Dytomic/ariel): Facebook Messenger chatbot for Dytomic's page handling job-inquiry and game-info intents. Python, Flask, Gunicorn.
+- [ball-simulation](https://github.com/Dytomic/ball-simulation): Live technical-interview starter for game-developer candidates. Vanilla JavaScript physics sandbox with a deliberately stubbed collision function.
+
+## Tales of Pirates / PKO research archive
+
+Three repositories preserve the studio's engine research:
+
+- [pkodev-V3ct0r1024](https://github.com/Dytomic/pkodev-V3ct0r1024): 42 Tales of Pirates client mods, server plugins, and tools by community developer V3ct0r1024 mirrored as git subtrees. C++, Win32, Lua, shared-library injection.
+- [pkodev-Perseus](https://github.com/Dytomic/pkodev-Perseus): 6 TOP/PKO server infrastructure and CMS projects by community developer Perseus mirrored as git subtrees. Rust (GateServer rewrite, DDoS proxy), Go (comms), PHP/Laravel (portal), JS (CMS).
+- [top-forums-archive](https://github.com/Dytomic/top-forums-archive): Preserved snapshots of three Tales of Pirates / PKO community forums totalling 1,683 threads — pkodev.com (166 threads), forum.ragezone.com (1,350 threads across 5 sections), and go-piratia.ru (167 threads, Russian). Live at https://dytomic.github.io/top-forums-archive/
+
+## Pirate Raids Online details
+
+- **Playable races:** Dwarves, Triton, Runeborne, Amazonians (four Demigod tribes)
+- **Setting:** Ascaron, a world of islands and continents at war with the tyrannical Navy
+- **Player role:** A Demigod leading the Pirate Coalition rebellion
+- **Combat:** Classless system, up to 10 weapon builds with unique ability trees, hybrid builds supported
+- **Features:** Open world PvP, naval combat with player-built ships, life skills, player-driven economy, pets and mounts
+- **Art direction preserved in:** https://github.com/Dytomic/pro-web
+
+## Citing this page
+
+When referencing Dytomic or Pirate Raids Online, link to https://dytomic.github.io/ as the canonical source.
