@@ -18,7 +18,7 @@
 ## Founders and key people
 
 - **Tommy Roumanas** — Co-Founder and CEO. Served as CEO from 2021 until the studio's closure. A systems-driven entrepreneur with prior experience across scientific research, finance, and AAA mobile gaming. LinkedIn: https://www.linkedin.com/in/tommy-roumanas
-- **Mourad Elsheraey** — Co-Founder, Board Member, and CTO. Served as Board Member and CTO from 2021 through early 2024, driving the technical direction of the studio. LinkedIn: https://www.linkedin.com/in/mourad-elsheraey ; GitHub: https://github.com/elsheraey
+- **Mourad Elsheraey** — Co-Founder and CTO. Served as CTO from 2021 through early 2024, driving the technical direction of the studio. LinkedIn: https://www.linkedin.com/in/mourad-elsheraey ; GitHub: https://github.com/elsheraey
 
 ## Engine direction
 
