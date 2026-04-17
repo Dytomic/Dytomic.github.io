@@ -3,7 +3,7 @@
 [![Live Site](https://img.shields.io/badge/live-dytomic.github.io-ef9d17?style=flat-square)](https://dytomic.github.io/)
 [![Studio](https://img.shields.io/badge/studio-archived-244585?style=flat-square)](https://dytomic.github.io/)
 
-**Source for the Dytomic organisation's archived public site.** A single-page technical record of [Dytomic](https://github.com/Dytomic) &mdash; an independent Montreal game development studio behind [Pirate Raids Online](https://github.com/Dytomic/pro-web), an old-school inspired PC MMORPG. The studio operated from 2021 through early 2024; everything here is preserved as open reference.
+**Source for the Dytomic organisation's archived public site.** A single-page technical record of [Dytomic](https://github.com/Dytomic), an independent Montreal game development studio behind [Pirate Raids Online](https://github.com/Dytomic/pro-web), an old-school inspired PC MMORPG. The studio operated from 2021 through early 2024, and everything here is preserved as open reference.
 
 Live at **[dytomic.github.io](https://dytomic.github.io/)**.
 
@@ -15,7 +15,7 @@ Live at **[dytomic.github.io](https://dytomic.github.io/)**.
 |---------|---------|
 | **Studio** | About Dytomic. Montreal-based independent game studio (2021&ndash;2024). |
 | **Team** | Founding team contributions: Tommy Roumanas (Co-Founder, CEO), Mourad Elsheraey (Co-Founder, CTO). |
-| **Game** | Pirate Raids Online &mdash; pre-production PC MMORPG set in Ascaron. Classless combat, naval gameplay, four Demigod tribes. |
+| **Game** | Pirate Raids Online, a pre-production PC MMORPG set in Ascaron. Classless combat, naval gameplay, four Demigod tribes. |
 | **Public Code** | The open-sourced subset of the studio's engineering work: pro-web, pro-splash, ariel, ball-simulation. |
 | **Research Archive** | Preserved research on the Tales of Pirates / PKO engine family. Links to [pkodev-V3ct0r1024](https://github.com/Dytomic/pkodev-V3ct0r1024), [pkodev-Perseus](https://github.com/Dytomic/pkodev-Perseus), and [top-forums-archive](https://github.com/Dytomic/top-forums-archive). |
 | **Expertise** | AI-streamlined art delivery. Dytomic accumulated deep practical knowledge applying AI to game-ready art production pipelines. Reach out to Tommy or Mourad directly. |
@@ -26,10 +26,10 @@ Live at **[dytomic.github.io](https://dytomic.github.io/)**.
 
 No build step. Single static `index.html` with inlined CSS, Google Fonts, and structured data (`Organization`, `VideoGame` JSON-LD). Hosted by GitHub Pages directly from the `main` branch root.
 
-- [index.html](index.html) &mdash; the page
-- [sitemap.xml](sitemap.xml) &mdash; for crawler discovery
-- [robots.txt](robots.txt) &mdash; allows all
-- `team-photo.jpg` &mdash; team call photo used in the Team section
+- [index.html](index.html): the page
+- [sitemap.xml](sitemap.xml): for crawler discovery
+- [robots.txt](robots.txt): allows all
+- `team-photo.jpg`: team call photo used in the Team section
 
 ---
 
@@ -74,7 +74,7 @@ All public Dytomic repositories, archived:
 
 ## Available expertise
 
-Throughout the studio's operation, Dytomic built **deep practical expertise using AI to streamline art delivery** &mdash; accelerating concept iteration, enforcing style consistency across large asset sets, and integrating AI-assisted workflows into game-ready art production pipelines. That accumulated knowledge remains with the founders.
+Throughout the studio's operation, Dytomic built **deep practical expertise using AI to streamline art delivery**. This covered accelerating concept iteration, enforcing style consistency across large asset sets, and integrating AI-assisted workflows into game-ready art production pipelines. That accumulated knowledge remains with the founders.
 
 **If you're exploring AI-driven art pipelines for your studio, product, or team, reach out to Tommy or Mourad directly:**
 
