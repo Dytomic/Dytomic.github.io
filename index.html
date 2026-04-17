@@ -322,6 +322,24 @@
     }
     .notice strong { color: var(--gold); font-weight: 700; }
 
+    /* ── TEAM PHOTO ── */
+    .team-photo {
+      max-width: 600px; margin: 0 auto 36px;
+      border: 1px solid var(--rule);
+      box-shadow: 0 6px 30px rgba(0,0,0,0.5);
+      display: block; overflow: hidden;
+      background: var(--bg-dark);
+    }
+    .team-photo img {
+      width: 100%; height: auto; display: block;
+    }
+    .team-photo-caption {
+      font-family: 'Cormorant Garamond', serif; font-style: italic;
+      font-size: 0.95rem; color: var(--off-white);
+      opacity: 0.6; text-align: center;
+      margin-top: 12px;
+    }
+
     /* ── CONTRIBUTOR ── */
     .contributor {
       background: rgba(0,0,0,0.35);
@@ -454,7 +472,12 @@
 
   <section>
     <div class="section-inner">
-      <p style="text-align: center; font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin-bottom: 28px; color: var(--off-white); opacity: 0.85;">Dytomic was built by a small founding team and a network of collaborators. This section recognises individual contributions that are publicly documented.</p>
+      <figure class="team-photo">
+        <img src="team-photo.jpg" alt="Dytomic team video call with ten members across leadership, engineering, art, and design" loading="lazy" />
+      </figure>
+      <p class="team-photo-caption">A moment from one of Dytomic&rsquo;s team calls.</p>
+
+      <p style="text-align: center; font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 1.2rem; margin: 36px 0 28px; color: var(--off-white); opacity: 0.85;">Dytomic was built by a small founding team and a network of collaborators. This section recognises individual contributions that are publicly documented.</p>
 
       <div class="contributor">
         <div class="contributor-head">
