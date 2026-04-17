@@ -3,46 +3,61 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Dytomic | Pirate Raids Online — Old-School MMORPG for PC</title>
-  <meta name="description" content="Dytomic was an independent game studio behind Pirate Raids Online (PRO), an old-school inspired MMORPG set in Ascaron. Play as a Demigod — Dwarf, Triton, Runeborne, or Amazonian — and lead the Pirate Coalition against the tyrannical Navy." />
-  <meta name="keywords" content="Pirate Raids Online, PRO MMORPG, Dytomic, Ascaron, Tales of Pirates, PKO, Pirate King Online, MMORPG PC, old school MMORPG, Demigod, Pirate Coalition, private server" />
+  <title>Mourad Elsheraey | CTO & Co-Founder at Dytomic — Game Engineering Portfolio</title>
+  <meta name="description" content="Technical portfolio of Mourad Elsheraey, Co-Founder and CTO at Dytomic (2021–2024). Engineering leadership on Pirate Raids Online (PRO), an MMORPG built on deep Tales of Pirates / PKO engine research. Rust, Go, Next.js, C++, Laravel, Python." />
+  <meta name="keywords" content="Mourad Elsheraey, Dytomic CTO, game engineering portfolio, MMORPG engineering, Pirate Raids Online, Tales of Pirates engine, PKO reverse engineering, Next.js, Rust, Go, C++, game server architecture" />
   <link rel="canonical" href="https://dytomic.github.io/" />
 
   <!-- Open Graph -->
-  <meta property="og:type" content="website" />
+  <meta property="og:type" content="profile" />
   <meta property="og:url" content="https://dytomic.github.io/" />
-  <meta property="og:title" content="Dytomic | Pirate Raids Online — Old-School MMORPG for PC" />
-  <meta property="og:description" content="Dytomic was an independent game studio behind Pirate Raids Online (PRO), an old-school inspired MMORPG set in Ascaron. Play as a Demigod and lead the Pirate Coalition against the tyrannical Navy." />
+  <meta property="og:title" content="Mourad Elsheraey | CTO & Co-Founder at Dytomic — Game Engineering Portfolio" />
+  <meta property="og:description" content="Technical portfolio and engineering archive. CTO at Dytomic, lead on Pirate Raids Online MMORPG. Deep Tales of Pirates / PKO engine research, full-stack game infrastructure." />
   <meta property="og:image" content="https://dytomic.github.io/preview.jpg" />
+  <meta property="profile:first_name" content="Mourad" />
+  <meta property="profile:last_name" content="Elsheraey" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Dytomic | Pirate Raids Online — Old-School MMORPG for PC" />
-  <meta name="twitter:description" content="Old-school inspired MMORPG for PC. Play as a Demigod — Dwarf, Triton, Runeborne, or Amazonian — and defend Ascaron from the new world order." />
+  <meta name="twitter:title" content="Mourad Elsheraey | Game Engineering Portfolio" />
+  <meta name="twitter:description" content="CTO at Dytomic (2021–2024). Technical work on Pirate Raids Online, Tales of Pirates / PKO engine research, full-stack game infrastructure." />
   <meta name="twitter:image" content="https://dytomic.github.io/preview.jpg" />
 
   <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "VideoGame",
-    "name": "Pirate Raids Online",
-    "alternateName": "PRO",
-    "description": "An old-school inspired MMORPG for PC set in the world of Ascaron, where Demigods lead the Pirate Coalition against the tyrannical Navy.",
-    "genre": ["MMORPG", "Role-playing game", "Action"],
-    "gamePlatform": "PC",
-    "developer": {
+    "@type": "Person",
+    "name": "Mourad Elsheraey",
+    "jobTitle": "Co-Founder & CTO",
+    "worksFor": {
       "@type": "Organization",
       "name": "Dytomic",
       "url": "https://dytomic.github.io"
     },
-    "url": "https://dytomic.github.io"
+    "url": "https://dytomic.github.io",
+    "sameAs": [
+      "https://www.linkedin.com/in/mourad-elsheraey",
+      "https://github.com/elsheraey"
+    ],
+    "knowsAbout": [
+      "Game Engineering",
+      "MMORPG Architecture",
+      "Tales of Pirates engine",
+      "Pirate King Online",
+      "Rust",
+      "Go",
+      "C++",
+      "Next.js",
+      "Laravel",
+      "Reverse Engineering"
+    ]
   }
   </script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&family=League+Spartan:wght@400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,600;1,400&family=League+Spartan:wght@400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet" />
 
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -68,7 +83,7 @@
     body {
       font-family: 'Cabin', arial, helvetica, sans-serif;
       font-size: 16px;
-      line-height: 1.5;
+      line-height: 1.55;
       color: var(--dark-2);
       background: var(--white);
     }
@@ -79,32 +94,44 @@
       line-height: 1.2;
     }
 
+    code, .mono {
+      font-family: 'JetBrains Mono', 'Courier New', monospace;
+      font-size: 0.9em;
+    }
+    code { background: var(--gray-bg); padding: 2px 6px; border-radius: 3px; color: var(--dark-2); }
+
     a { color: var(--blue); text-decoration: none; transition: color 0.33s ease-in-out; }
     a:hover { color: var(--blue-hover); text-decoration: underline; }
 
     /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 1000;
-      background: rgba(255,255,255,0.95);
+      background: rgba(255,255,255,0.96);
       border-bottom: 1px solid var(--gray-rule);
-      backdrop-filter: blur(4px);
+      backdrop-filter: blur(6px);
     }
     .nav-inner {
       max-width: var(--max-w); margin: 0 auto;
       display: flex; align-items: center; justify-content: space-between;
-      height: 72px; padding: 0 24px; gap: 24px;
+      height: 64px; padding: 0 24px; gap: 24px;
     }
     .nav-brand {
       font-family: 'League Spartan', sans-serif;
-      font-size: 22px; font-weight: 600;
-      color: var(--dark-2); letter-spacing: 0.063em;
+      font-size: 17px; font-weight: 600;
+      color: var(--dark-2); letter-spacing: 0.05em;
       white-space: nowrap;
     }
-    .nav-brand span { color: var(--blue); }
+    .nav-brand .accent { color: var(--blue); }
+    .nav-brand small {
+      font-family: 'Cabin', sans-serif;
+      font-weight: 400; font-size: 13px;
+      color: var(--gray-mid); margin-left: 6px;
+      letter-spacing: 0;
+    }
     .nav-links { display: flex; gap: 0; list-style: none; }
     .nav-links a {
-      display: block; padding: 8px 16px;
-      font-size: 15px; color: var(--dark-2);
+      display: block; padding: 8px 14px;
+      font-size: 14px; color: var(--dark-2);
       border-bottom: 2px solid transparent;
       transition: color 0.33s ease-in-out, border-color 0.33s ease-in-out;
       white-space: nowrap;
@@ -114,41 +141,65 @@
     /* ── HERO ── */
     .hero {
       background:
-        linear-gradient(to bottom, rgba(22,22,22,0.62) 0%, rgba(22,22,22,0.55) 100%),
+        linear-gradient(to bottom, rgba(22,22,22,0.70) 0%, rgba(22,22,22,0.62) 100%),
         url('https://img1.wsimg.com/isteam/ip/b99aa48c-68fd-40fc-9a91-16577ae8a001/Mercernary_Faction.jpg/:/rs=w:1534,h:862') center/cover no-repeat;
-      min-height: 85vh;
-      display: flex; align-items: center; justify-content: center;
-      text-align: center; padding: 80px 24px;
+      min-height: 78vh;
+      display: flex; align-items: center;
+      padding: 80px 24px;
     }
-    .hero-content { max-width: 700px; }
+    .hero-content { max-width: var(--max-w); margin: 0 auto; width: 100%; }
+    .hero-eyebrow {
+      display: inline-block;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem; color: var(--blue-light);
+      letter-spacing: 0.12em; text-transform: uppercase;
+      margin-bottom: 20px;
+      padding: 5px 12px; border: 1px solid rgba(77,163,220,0.4);
+      border-radius: 3px;
+    }
     .hero h1 {
-      font-size: clamp(2.4rem, 6vw, 4rem);
+      font-size: clamp(2.2rem, 5.5vw, 3.5rem);
       color: var(--white);
-      margin-bottom: 24px;
-      text-shadow: 0px 2px 30px rgba(0,0,0,0.3);
+      margin-bottom: 16px;
+      text-shadow: 0px 2px 30px rgba(0,0,0,0.4);
+    }
+    .hero h2 {
+      font-size: clamp(1rem, 2.5vw, 1.3rem);
+      font-weight: 400;
+      color: rgba(255,255,255,0.85);
+      margin-bottom: 28px;
+      font-family: 'Cabin', sans-serif;
     }
     .hero p {
-      font-size: clamp(1rem, 2.5vw, 1.2rem);
-      color: rgba(255,255,255,0.88);
-      margin-bottom: 40px;
-      line-height: 1.6;
+      font-size: clamp(0.95rem, 2vw, 1.1rem);
+      color: rgba(255,255,255,0.82);
+      margin-bottom: 36px;
+      line-height: 1.65;
+      max-width: 720px;
     }
-    .badge-row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 40px; }
-    .badge {
-      background: rgba(255,255,255,0.12); border: 1px solid rgba(255,255,255,0.3);
-      color: rgba(255,255,255,0.85); padding: 5px 14px; border-radius: 4px;
-      font-size: 0.8rem; letter-spacing: 0.05em;
+    .hero-stack { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 36px; }
+    .hero-stack .chip {
+      font-family: 'JetBrains Mono', monospace;
+      background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.22);
+      color: rgba(255,255,255,0.92); padding: 5px 11px; border-radius: 3px;
+      font-size: 0.78rem;
     }
+    .btn-row { display: flex; gap: 12px; flex-wrap: wrap; }
     .btn {
       display: inline-block;
       background: var(--blue); color: var(--white);
-      padding: 14px 32px; border-radius: 4px;
-      font-family: 'Cabin', sans-serif; font-weight: 600; font-size: 1rem;
+      padding: 13px 28px; border-radius: 4px;
+      font-family: 'Cabin', sans-serif; font-weight: 600; font-size: 0.95rem;
       line-height: 1.125; letter-spacing: 0.02em;
       transition: background 0.33s ease-in-out, transform 0.33s ease-in-out;
     }
     .btn:hover { background: var(--blue-hover); color: var(--white); text-decoration: none; transform: translateY(-1px); }
     .btn:active { background: var(--blue-active); }
+    .btn-outline {
+      background: transparent; border: 1px solid rgba(255,255,255,0.5);
+      color: var(--white);
+    }
+    .btn-outline:hover { background: rgba(255,255,255,0.1); border-color: var(--white); color: var(--white); }
 
     /* ── SECTIONS ── */
     section { padding: 72px 24px; border-bottom: 1px solid var(--gray-rule); }
@@ -156,72 +207,112 @@
     .section-inner { max-width: var(--max-w); margin: 0 auto; }
 
     .section-label {
-      font-family: 'Cabin', sans-serif;
-      font-size: 0.75rem; font-weight: 600;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem; font-weight: 600;
       color: var(--blue); text-transform: uppercase;
       letter-spacing: 0.15em; margin-bottom: 10px;
     }
-    h2 { font-size: clamp(1.6rem, 3.5vw, 2.2rem); color: var(--dark-2); margin-bottom: 24px; }
-    h3 { font-size: 1.15rem; color: var(--dark-2); margin-bottom: 10px; }
-    p { margin-bottom: 16px; color: var(--gray-mid); }
+    h2 { font-size: clamp(1.5rem, 3.2vw, 2rem); color: var(--dark-2); margin-bottom: 20px; }
+    h3 { font-size: 1.08rem; color: var(--dark-2); margin-bottom: 8px; }
+    p { margin-bottom: 14px; color: var(--gray-mid); }
     p:last-child { margin-bottom: 0; }
     p.lead {
-      font-size: 1.1rem; color: var(--dark-2);
+      font-size: 1.08rem; color: var(--dark-2);
       border-left: 3px solid var(--blue);
-      padding-left: 20px; margin-bottom: 32px;
+      padding-left: 18px; margin-bottom: 28px;
     }
 
-    /* ── CARDS ── */
-    .grid-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; margin-top: 32px; }
-    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 32px; }
-    .grid-4 { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-top: 32px; }
+    /* ── TWO-COL LAYOUT ── */
+    .two-col {
+      display: grid; grid-template-columns: 1fr 2fr; gap: 48px;
+      align-items: start;
+    }
+    .two-col .meta {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem; color: var(--gray-mid);
+    }
+    .two-col .meta strong { color: var(--dark-2); display: block; margin-bottom: 4px; }
+    .two-col .meta dl { margin-top: 20px; }
+    .two-col .meta dt { font-weight: 600; color: var(--dark-2); margin-top: 14px; font-size: 0.72rem; text-transform: uppercase; letter-spacing: 0.1em; }
+    .two-col .meta dd { color: var(--gray-mid); margin-top: 2px; font-size: 0.85rem; }
 
+    @media (max-width: 767px) {
+      .two-col { grid-template-columns: 1fr; gap: 24px; }
+    }
+
+    /* ── STACK CHIPS ── */
+    .stack { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 12px; margin-bottom: 14px; }
+    .stack .tag {
+      font-family: 'JetBrains Mono', monospace;
+      background: var(--gray-bg); border: 1px solid var(--gray-rule);
+      color: var(--dark-2); padding: 3px 9px; border-radius: 3px;
+      font-size: 0.73rem;
+    }
+    .dark-section .stack .tag {
+      background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.2); color: rgba(255,255,255,0.9);
+    }
+
+    /* ── PROJECT LIST ── */
+    .project {
+      padding: 28px 0; border-bottom: 1px solid var(--gray-rule);
+    }
+    .project:last-child { border-bottom: none; }
+    .project-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      flex-wrap: wrap; gap: 12px; margin-bottom: 6px;
+    }
+    .project-head h3 { margin: 0; font-size: 1.15rem; }
+    .project-head h3 a { color: var(--dark-2); }
+    .project-head h3 a:hover { color: var(--blue); }
+    .project-role {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem; color: var(--blue);
+      text-transform: uppercase; letter-spacing: 0.1em;
+    }
+
+    /* ── GRID ── */
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; margin-top: 28px; }
     .card {
       background: var(--white); border-radius: 4px;
       border: 1px solid var(--gray-rule);
-      box-shadow: 0 2px 6px 0 rgba(0,0,0,0.08);
-      padding: 24px;
-      transition: box-shadow 0.33s ease-in-out;
+      box-shadow: 0 2px 6px 0 rgba(0,0,0,0.06);
+      padding: 22px;
+      transition: box-shadow 0.33s ease-in-out, transform 0.33s ease-in-out;
     }
-    .card:hover { box-shadow: 0 4px 12px 0 rgba(0,0,0,0.14); }
-    .card-accent { border-top: 3px solid var(--blue); }
-    .card h3 { color: var(--blue); }
-
-    /* ── TABLE ── */
-    table { width: 100%; border-collapse: collapse; margin-top: 24px; font-size: 0.95rem; }
-    th {
-      text-align: left; padding: 10px 16px;
-      background: var(--dark); color: var(--white);
-      font-family: 'League Spartan', sans-serif;
-      font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.1em;
-    }
-    th:first-child { border-radius: 4px 0 0 0; }
-    th:last-child { border-radius: 0 4px 0 0; }
-    td { padding: 12px 16px; border-bottom: 1px solid var(--gray-rule); vertical-align: top; color: var(--gray-mid); }
-    td:first-child { color: var(--dark-2); font-weight: 600; white-space: nowrap; }
-    tr:last-child td { border-bottom: none; }
-    tr:hover td { background: var(--gray-bg); }
+    .card:hover { box-shadow: 0 6px 18px 0 rgba(0,0,0,0.1); transform: translateY(-2px); }
+    .card h3 { color: var(--blue); margin-bottom: 6px; font-size: 0.95rem; }
+    .card p { font-size: 0.9rem; }
 
     /* ── DARK SECTION ── */
-    .dark-section { background: var(--dark); border-bottom-color: #2a2a2a; }
+    .dark-section { background: var(--dark); border-bottom-color: #2a2a2a; color: rgba(255,255,255,0.85); }
     .dark-section .section-label { color: var(--blue-light); }
     .dark-section h2 { color: var(--white); }
-    .dark-section h3 { color: var(--blue-light); }
-    .dark-section p { color: rgba(255,255,255,0.65); }
-    .dark-section p.lead { color: rgba(255,255,255,0.88); border-left-color: var(--blue-light); }
+    .dark-section h3 { color: var(--white); }
+    .dark-section p { color: rgba(255,255,255,0.7); }
+    .dark-section p.lead { color: rgba(255,255,255,0.9); border-left-color: var(--blue-light); }
+    .dark-section code { background: rgba(255,255,255,0.08); color: var(--blue-light); }
+    .dark-section .project { border-bottom-color: #2a2a2a; }
+    .dark-section .project-head h3 a { color: var(--white); }
+    .dark-section .project-head h3 a:hover { color: var(--blue-light); }
+    .dark-section .project-role { color: var(--blue-light); }
+    .dark-section .two-col .meta dt { color: rgba(255,255,255,0.95); }
+    .dark-section .two-col .meta dd { color: rgba(255,255,255,0.65); }
     .dark-section .card { background: #1f1f1f; border-color: #2a2a2a; }
     .dark-section .card h3 { color: var(--blue-light); }
-    .dark-section table th { background: #0a0a0a; }
-    .dark-section table td { border-bottom-color: #2a2a2a; color: rgba(255,255,255,0.6); }
-    .dark-section table td:first-child { color: rgba(255,255,255,0.9); }
-    .dark-section table tr:hover td { background: #1f1f1f; }
     .dark-section a { color: var(--blue-light); }
     .dark-section a:hover { color: #add1f3; }
 
+    /* ── GAME CONTEXT (compact) ── */
+    .context-bar {
+      background: var(--gray-bg); border-left: 3px solid var(--blue);
+      padding: 20px 24px; margin-top: 24px; border-radius: 0 4px 4px 0;
+      font-size: 0.93rem;
+    }
+    .context-bar strong { color: var(--dark-2); }
+
     /* ── FOOTER ── */
     footer {
-      background: var(--dark); padding: 56px 24px 40px;
-      border-top: 1px solid var(--gray-rule);
+      background: var(--dark); padding: 56px 24px 32px;
     }
     .footer-inner {
       max-width: var(--max-w); margin: 0 auto;
@@ -230,23 +321,25 @@
     }
     .footer-brand {
       font-family: 'League Spartan', sans-serif; font-size: 20px;
-      color: var(--white); letter-spacing: 0.063em; margin-bottom: 8px;
+      color: var(--white); letter-spacing: 0.05em; margin-bottom: 8px;
     }
-    .footer-tagline { font-size: 0.85rem; color: var(--gray-light); }
+    .footer-brand .accent { color: var(--blue-light); }
+    .footer-tagline { font-size: 0.87rem; color: var(--gray-light); line-height: 1.6; }
     .footer-links { display: flex; flex-direction: column; gap: 8px; }
     .footer-links a { font-size: 0.9rem; color: var(--blue-link); }
     .footer-links a:hover { color: #adb9f3; }
     .footer-bottom {
       max-width: var(--max-w); margin: 40px auto 0;
       padding-top: 24px; border-top: 1px solid #2a2a2a;
-      font-size: 0.8rem; color: var(--gray-light);
+      font-size: 0.78rem; color: var(--gray-light);
       display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+      font-family: 'JetBrains Mono', monospace;
     }
 
     @media (max-width: 767px) {
       .nav-links { display: none; }
-      .footer-inner { flex-direction: column; }
-      .footer-bottom { flex-direction: column; }
+      .footer-inner, .footer-bottom { flex-direction: column; }
+      section { padding: 56px 20px; }
     }
   </style>
 </head>
@@ -254,216 +347,193 @@
 
 <nav aria-label="Site navigation">
   <div class="nav-inner">
-    <span class="nav-brand">DY<span>TO</span>MIC</span>
+    <span class="nav-brand">Mourad Elsheraey <small>· Dytomic <span class="accent">archive</span></small></span>
     <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#story">Story</a></li>
-      <li><a href="#races">Races</a></li>
-      <li><a href="#world">World</a></li>
-      <li><a href="#combat">Combat</a></li>
-      <li><a href="#features">Features</a></li>
-      <li><a href="#pko-research">PKO Research</a></li>
-      <li><a href="#source">Open Source</a></li>
+      <li><a href="#role">Role</a></li>
+      <li><a href="#stack">Stack</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#pko">Engine Research</a></li>
+      <li><a href="#game">The Game</a></li>
     </ul>
   </div>
 </nav>
 
 <header class="hero">
   <div class="hero-content">
-    <h1>Pirate Raids Online</h1>
-    <p>An old-school inspired MMORPG for PC. Play as a Demigod and lead the Pirate Coalition in a rebellion against the tyrannical forces of The Navy. Defend Ascaron from the new world order.</p>
-    <div class="badge-row">
-      <span class="badge">PC MMORPG</span>
-      <span class="badge">Old-School</span>
-      <span class="badge">Classless Combat</span>
-      <span class="badge">Open World PvP</span>
-      <span class="badge">Naval Combat</span>
-      <span class="badge">4 Playable Races</span>
+    <div class="hero-eyebrow">Co-Founder · CTO · 2021–2024</div>
+    <h1>Building an MMORPG from engine research up</h1>
+    <h2>Technical portfolio of Mourad Elsheraey &mdash; engineering lead at Dytomic, the independent studio behind Pirate Raids Online.</h2>
+    <p>Three years of technical direction across game-client engineering, server infrastructure rewrites, reverse-engineering of the Tales of Pirates / PKO engine, and the full-stack web presence that supported it. All code is now public and archived.</p>
+    <div class="hero-stack">
+      <span class="chip">Rust</span>
+      <span class="chip">Go</span>
+      <span class="chip">C++</span>
+      <span class="chip">Python</span>
+      <span class="chip">Next.js</span>
+      <span class="chip">React</span>
+      <span class="chip">Laravel</span>
+      <span class="chip">Node.js</span>
+      <span class="chip">Reverse Engineering</span>
     </div>
-    <a href="https://github.com/Dytomic" class="btn" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+    <div class="btn-row">
+      <a href="https://github.com/Dytomic" class="btn" target="_blank" rel="noopener">GitHub &rarr;</a>
+      <a href="https://www.linkedin.com/in/mourad-elsheraey" class="btn btn-outline" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
   </div>
 </header>
 
 <main>
 
-  <section id="about">
+  <section id="role">
     <div class="section-inner">
-      <div class="section-label">The Studio</div>
-      <h2>About Dytomic</h2>
-      <p class="lead">Independent game development studio formerly based in Montreal, Quebec.</p>
-      <p>Dytomic was founded to build Pirate Raids Online — a PC MMORPG drawing from the classic Tales of Pirates and Pirate King Online (PKO) engine heritage, reimagined with modern design expectations. The studio operated from 2021 through early 2024 before ceasing operations.</p>
-      <p>All repositories are now public and archived. The code, art direction, and game design of Pirate Raids Online remain browsable as an open technical record.</p>
-    </div>
-  </section>
-
-  <section id="story" class="alt">
-    <div class="section-inner">
-      <div class="section-label">Lore</div>
-      <h2>Defend Ascaron from the New World Order</h2>
-      <p class="lead">A tyrant regime known as The Navy seeks to burn, pillage, and capture all within reach of their expanding empire.</p>
-      <p>Their conquest stretches outwards into the seas and islands of Ascaron, wreaking havoc and threatening all who stand in the way of their new world order. A group of rebels and freedom fighters have taken up arms against the merciless tyrants — but to no avail.</p>
-      <p>However, there is still hope. As ancient prophecies once foretold, the unification of the Soulstones shall fulfill a sacred primordial ritual and give rise to the divine summoning of Elefrihet — the almighty god of justice and supreme patron of Ascaron. In a collective effort to end The Navy's conquest, the rebellion established <strong>The Pirate Coalition</strong>: an alliance between the pirate tribes seeking to reunite the Demigods, now lost to time and isolation, to fulfill the ancient prophecy and save humanity from annihilation.</p>
-    </div>
-  </section>
-
-  <section id="races">
-    <div class="section-inner">
-      <div class="section-label">Playable Races</div>
-      <h2>The Four Demigod Tribes of Ascaron</h2>
-      <p class="lead">Over a thousand years ago, Elefrihet created a race of Demigods to defend humanity against the forces of Torantika, goddess of death.</p>
-      <div class="grid-4">
-        <article class="card card-accent">
-          <h3>Dwarves</h3>
-          <p>Guardians of the mountains. Their defensive tactics and expertise in fortifying structures pose a great threat to Navy invasions.</p>
-        </article>
-        <article class="card card-accent">
-          <h3>Triton</h3>
-          <p>Masters of the sea and expert shipbuilders. Their nautical prowess intimidates even the highest ranked Navy captains.</p>
-        </article>
-        <article class="card card-accent">
-          <h3>Runeborne</h3>
-          <p>Wardens of the tundras and forests. Their ferocity and ruthlessness in battle threatens Navy encampments throughout the land.</p>
-        </article>
-        <article class="card card-accent">
-          <h3>Amazonians</h3>
-          <p>Equipped with predatory instincts, enhanced agility, and swiftness. Silent killers — lethal protectors of the jungle.</p>
-        </article>
+      <div class="two-col">
+        <div class="meta">
+          <strong>The role</strong>
+          <dl>
+            <dt>Title</dt><dd>Co-Founder · Board Member · CTO</dd>
+            <dt>Studio</dt><dd>Dytomic Inc.</dd>
+            <dt>Tenure</dt><dd>2021 &rarr; Early 2024</dd>
+            <dt>Location</dt><dd>Montreal, Quebec</dd>
+            <dt>Status</dt><dd>Studio archived</dd>
+          </dl>
+        </div>
+        <div>
+          <div class="section-label">Role &amp; Scope</div>
+          <h2>CTO and engineering direction, end to end</h2>
+          <p class="lead">Owned technical direction for an independent game studio building a PC MMORPG from first principles on top of a legacy engine.</p>
+          <p>Dytomic was founded to ship <strong>Pirate Raids Online</strong> — a PC MMORPG drawing from the classic Tales of Pirates / Pirate King Online (PKO) engine, reimagined with modern design. As CTO I led every technical decision from engine choice through to the public web presence.</p>
+          <p>The remit covered: hiring and running the engineering team, reverse-engineering the TOP/PKO engine to understand what we were building on, selecting and prototyping the server stack (we explored Rust and Go rewrites of the GateServer), running the full web marketing stack (Next.js), and running the live technical interview process for game-developer candidates.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="world" class="alt">
+  <section id="stack" class="alt">
     <div class="section-inner">
-      <div class="section-label">Gameplay</div>
-      <h2>Explore a Dynamic World on Both Land and Sea</h2>
-      <p class="lead">Whether on land or sea, the world of Ascaron is abundant with wildlife and rich in resources.</p>
-      <p>Master the pioneered skills of the Demigods and gather materials to improve weapons, equipment, ships, and structures. Set sail on your very own ship to islands and continents where you can seek prized goods, raid Navy encampments, or test your mettle with fellow pirates.</p>
-      <div class="grid-2">
-        <article class="card card-accent">
-          <h3>PvE</h3>
-          <p>The tyrannical actions of The Navy have tainted Ascaron with dark forces not seen for thousands of years. Deadly dungeons from the days of old are resurfacing, and mythical monsters are laying waste to island inhabitants.</p>
-        </article>
-        <article class="card card-accent">
-          <h3>PvP</h3>
-          <p>The Pirate Coalition welcomes its members to compete in risk-based PvP arenas and territories. Hone your skills and prove your might among fellow pirates to claim glory and prized rewards.</p>
-        </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="combat">
-    <div class="section-inner">
-      <div class="section-label">Combat System</div>
-      <h2>A Unique Classless Combat System</h2>
-      <p class="lead">The Pirate Coalition does not discriminate over the style of combat you wish to use — so long as it brings destruction to the Navy.</p>
-      <p>Master up to 10 weapon builds featuring unique combat styles and ability trees. Combine 1-handed weapons with off-hand gear or other weapon types to create hybrid builds that best suit your playstyle.</p>
+      <div class="section-label">Stack decisions</div>
+      <h2>What was chosen, and why</h2>
+      <p class="lead">Every layer of the stack was picked deliberately, with trade-offs documented in the repos themselves.</p>
       <div class="grid-3">
-        <article class="card card-accent">
-          <h3>Melee</h3>
-          <p>Sharpen your skills in close-range combat and become a fierce warrior in the Pirate Coalition.</p>
+        <article class="card">
+          <h3>Rust for server rewrites</h3>
+          <p>The legacy GateServer is a single-threaded Windows-only binary. Rewriting in Rust gave us Linux deploys, multi-region redundancy, and safe concurrency without rewriting the game logic.</p>
         </article>
-        <article class="card card-accent">
-          <h3>Ranged</h3>
-          <p>Hone your skills in ranged combat and become an apex predator in the Pirate Coalition.</p>
+        <article class="card">
+          <h3>Go for comms plane</h3>
+          <p>A Go interface layer for direct communication between GateServer, GameServer, and GroupServer &mdash; picked for fast iteration and solid networking primitives.</p>
         </article>
-        <article class="card card-accent">
-          <h3>Magic</h3>
-          <p>Master various disciplines of magic combat and become a sacred acolyte in the Pirate Coalition.</p>
+        <article class="card">
+          <h3>Next.js 12 + React 18</h3>
+          <p>Marketing site on Next.js 12 with React Bootstrap and CSS Modules. SSR for SEO, static export-friendly, fast enough to keep page weight low on a content-heavy lore page.</p>
         </article>
-      </div>
-    </div>
-  </section>
-
-  <section id="features" class="alt">
-    <div class="section-inner">
-      <div class="section-label">Game Systems</div>
-      <h2>Features</h2>
-      <div class="grid-3">
-        <article class="card card-accent">
-          <h3>Ships</h3>
-          <p>Each Demigod tribe has perfected seafaring for thousands of years. Build your own ship honouring your tribe and master combat, exploration, fishing, and ship upgrades at sea.</p>
+        <article class="card">
+          <h3>C++ for client mods</h3>
+          <p>The engine is a Win32 C++ codebase. Client modifications use the PKOdev mod loader &mdash; a shared-library injection system &mdash; compiled against the same MSVC toolchain as the original.</p>
         </article>
-        <article class="card card-accent">
-          <h3>Pets &amp; Mounts</h3>
-          <p>Tame wondrous creatures of Ascaron as companions or adornments. Bond or break beasts at the Amberock Stables to travel the lands more efficiently.</p>
+        <article class="card">
+          <h3>Laravel for player CMS</h3>
+          <p>Private-server CMSes were pragmatic choices: Laravel for the full player portal with auth / rankings / purchases, and a separate JS CMS for operational tooling.</p>
         </article>
-        <article class="card card-accent">
-          <h3>Life Skills</h3>
-          <p>Master the ancient crafts of the Demigods across up to 10 unique life skills and supply the Coalition's demand for weapons, equipment, and resources.</p>
-        </article>
-        <article class="card card-accent">
-          <h3>Player Economy</h3>
-          <p>Free trade among pirates with supply and demand dictated by the needs of the Pirate Coalition — contrary to the will of the Navy.</p>
-        </article>
-        <article class="card card-accent">
-          <h3>Trading System</h3>
-          <p>Trade or exchange goods with fellow pirates on the road or at the famous Pirate Exchange. Enter trade auctions and build your fortune.</p>
-        </article>
-        <article class="card card-accent">
-          <h3>Guild System</h3>
-          <p>Old-school MMORPG guild mechanics — guild wars, territory control, and coordinated raid encounters against the Navy.</p>
+        <article class="card">
+          <h3>Python for ops bots</h3>
+          <p>Ariel, the Facebook Messenger intake bot, was a deliberate single-file Python / Flask app. The README&rsquo;s own words: a reminder not to over-engineer relative to the value delivered.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <section id="pko-research" class="dark-section">
+  <section id="projects">
     <div class="section-inner">
-      <div class="section-label">Open Source Research</div>
-      <h2>Tales of Pirates and PKO Development Archives</h2>
-      <p class="lead">Pirate Raids Online was built on deep research into the Tales of Pirates (TOP) and Pirate King Online (PKO) engine. Those findings are preserved as open-source monorepo mirrors.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Repository</th>
-            <th>Contents</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="https://github.com/Dytomic/pkodev-V3ct0r1024" target="_blank" rel="noopener">pkodev-V3ct0r1024</a></td>
-            <td>42 open-source Tales of Pirates client mods, server plugins, and tools by V3ct0r1024 — mod loader, 60fps fix, anti-bot, offline stall server, GM utilities, and player UI enhancements.</td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/Dytomic/pkodev-Perseus" target="_blank" rel="noopener">pkodev-Perseus</a></td>
-            <td>Server infrastructure and web projects by Perseus — GateServer rewrite in Rust, DDoS-filtering proxy, Go server comms interface, Laravel private server CMS, and JavaScript CMS.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="section-label">Engineering projects</div>
+      <h2>Codebases from the archive</h2>
+      <p class="lead">Every repo in the Dytomic GitHub org, with the stack, role, and what it actually does.</p>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/Dytomic/pro-web" target="_blank" rel="noopener">pro-web &rarr;</a></h3>
+          <span class="project-role">Lead · Marketing site</span>
+        </div>
+        <div class="stack">
+          <span class="tag">Next.js 12</span><span class="tag">React 18</span><span class="tag">React Bootstrap 2</span><span class="tag">CSS Modules</span><span class="tag">next/image</span>
+        </div>
+        <p>Official marketing website for Pirate Raids Online. Eight content sections (story, world, four Demigod tribes, combat, ships, features) with full-bleed backgrounds, custom shadow-boxes, and gold-accent design language. Built on Next.js 12 for SSR and responsive images.</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/Dytomic/pro-splash" target="_blank" rel="noopener">pro-splash &rarr;</a></h3>
+          <span class="project-role">Lead · Early splash</span>
+        </div>
+        <div class="stack">
+          <span class="tag">React 17</span><span class="tag">Create React App</span>
+        </div>
+        <p>Early pre-launch splash page linking to social channels. Built with Create React App and hand-tuned absolute positioning to work around Safari iOS layout quirks in viewport sizing. Discontinued once pro-web shipped.</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/Dytomic/ariel" target="_blank" rel="noopener">ariel &rarr;</a></h3>
+          <span class="project-role">Lead · Messenger bot</span>
+        </div>
+        <div class="stack">
+          <span class="tag">Python</span><span class="tag">Flask</span><span class="tag">Gunicorn</span><span class="tag">Facebook Messenger API</span>
+        </div>
+        <p>Facebook Messenger chatbot on Dytomic&rsquo;s page handling job-inquiry and game-info intents. Single-file Python intent resolver backed by JSON intent trees &mdash; deliberately simple. Named after a co-founder&rsquo;s dog.</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/Dytomic/ball-simulation" target="_blank" rel="noopener">ball-simulation &rarr;</a></h3>
+          <span class="project-role">Author · Hiring artefact</span>
+        </div>
+        <div class="stack">
+          <span class="tag">Vanilla JS</span><span class="tag">CSS GPU transforms</span><span class="tag">60 FPS loop</span>
+        </div>
+        <p>Live-interview starter for game-developer candidates. 1,000 footballs with gravity, mass, and boundary collision at 60 FPS, with <code>checkCollisions()</code> deliberately stubbed. Candidates extend it under time pressure &mdash; the interview explores spatial partitioning instincts, not a reference answer.</p>
+      </article>
     </div>
   </section>
 
-  <section id="source">
+  <section id="pko" class="dark-section">
     <div class="section-inner">
-      <div class="section-label">Open Source</div>
-      <h2>All Code is Public</h2>
-      <p class="lead">Dytomic has shut down. All repositories are archived and open to the public as a preserved technical record.</p>
-      <table>
-        <thead>
-          <tr>
-            <th>Repository</th>
-            <th>Description</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td><a href="https://github.com/Dytomic/pro-web" target="_blank" rel="noopener">pro-web</a></td>
-            <td>Official marketing website for Pirate Raids Online. Next.js 12, React 18, React Bootstrap, CSS Modules.</td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/Dytomic/pro-splash" target="_blank" rel="noopener">pro-splash</a></td>
-            <td>Early splash page for PRO linking to social media. React with iOS-tuned layout.</td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/Dytomic/ariel" target="_blank" rel="noopener">ariel</a></td>
-            <td>Facebook Messenger chatbot for Dytomic's page. Node.js. Named in memory of a co-founder's beloved dog.</td>
-          </tr>
-          <tr>
-            <td><a href="https://github.com/Dytomic/ball-simulation" target="_blank" rel="noopener">ball-simulation</a></td>
-            <td>Live technical interview starter for game-developer candidates. Browser-based physics sandbox with a stubbed <code>checkCollisions()</code> call for candidates to extend.</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="section-label">Deep technical work</div>
+      <h2>Tales of Pirates &amp; PKO engine research</h2>
+      <p class="lead">Pirate Raids Online sat on top of a legacy MMORPG engine. Shipping a modern game meant understanding that engine deeply &mdash; these two monorepos are the preserved research archive.</p>
+      <p>Both repos are git-subtree mirrors of the full public bodies of work by community engine developers V3ct0r1024 and Perseus. They&rsquo;re maintained here as syncable upstream references &mdash; each subtree can be pulled independently as the original authors publish changes.</p>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/Dytomic/pkodev-V3ct0r1024" target="_blank" rel="noopener">pkodev-V3ct0r1024 &rarr;</a></h3>
+          <span class="project-role">42 upstream repos · Client + Server</span>
+        </div>
+        <div class="stack">
+          <span class="tag">C++</span><span class="tag">Win32</span><span class="tag">Shared library injection</span><span class="tag">Lua</span>
+        </div>
+        <p>42 open-source Tales of Pirates mods and tools by V3ct0r1024, mirrored as git subtrees. Contents: the <code>pkodev.mod.loader</code> shared-library mod loader, client-side mods (60fps uncapping, anti-bot, full-map reveal, item-level icons, classless stat systems), server plugins (daily reward chains, player rating, GM command tools, mob respawn fixes), and the offline stall server (C++/Winsock).</p>
+      </article>
+
+      <article class="project">
+        <div class="project-head">
+          <h3><a href="https://github.com/Dytomic/pkodev-Perseus" target="_blank" rel="noopener">pkodev-Perseus &rarr;</a></h3>
+          <span class="project-role">6 upstream repos · Infrastructure</span>
+        </div>
+        <div class="stack">
+          <span class="tag">Rust</span><span class="tag">Go</span><span class="tag">PHP 8</span><span class="tag">Laravel</span><span class="tag">JavaScript</span>
+        </div>
+        <p>Perseus&rsquo;s server infrastructure work, mirrored as git subtrees. Contents: <code>top-server-rewrite</code> (full Rust rewrite of the GateServer), <code>top-proxy</code> (Rust middleman proxy providing DDoS filtering and Linux deployability without touching the GateServer), <code>top-comm</code> (Go comms interface), <code>pko-tools</code> (Rust asset converter to/from glTF for Blender workflows), and two private-server CMS projects on Laravel and JavaScript.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="game" class="alt">
+    <div class="section-inner">
+      <div class="section-label">Context</div>
+      <h2>What the game was</h2>
+      <p class="lead">Pirate Raids Online (PRO) was the product around which all of this engineering happened. Brief context for readers coming to this page from a technical angle.</p>
+      <div class="context-bar">
+        <p><strong>Pirate Raids Online</strong> &mdash; an old-school inspired PC MMORPG set in the world of Ascaron. Players took the role of a Demigod leading <strong>The Pirate Coalition</strong> in a rebellion against <strong>The Navy</strong>. Four playable Demigod tribes (Dwarves, Triton, Runeborne, Amazonians), classless combat with up to 10 weapon builds, open world PvP, naval combat with player-built ships, and old-school systems (guilds, life skills, player-driven economy).</p>
+      </div>
+      <p style="margin-top: 18px;">The full marketing-side vision lives in the <a href="https://github.com/Dytomic/pro-web" target="_blank" rel="noopener">pro-web repo</a>. The studio shut down in early 2024; everything here is archived as a public technical record of the work.</p>
     </div>
   </section>
 
@@ -472,20 +542,22 @@
 <footer>
   <div class="footer-inner">
     <div>
-      <div class="footer-brand">DYTOMIC</div>
-      <p class="footer-tagline">Independent game studio &mdash; Montreal, Quebec<br>2021&ndash;2024. Studio archived.</p>
+      <div class="footer-brand">Mourad <span class="accent">Elsheraey</span></div>
+      <p class="footer-tagline">Co-Founder &amp; CTO, Dytomic Inc.<br>Montreal, Quebec &middot; 2021&ndash;2024<br>Studio archived &middot; All code public.</p>
     </div>
     <nav class="footer-links" aria-label="Footer navigation">
-      <a href="#about">About</a>
-      <a href="#story">Story</a>
-      <a href="#races">Demigod Races</a>
-      <a href="#pko-research">PKO Research</a>
-      <a href="https://github.com/Dytomic" target="_blank" rel="noopener">GitHub</a>
+      <a href="#role">Role &amp; Scope</a>
+      <a href="#stack">Stack Decisions</a>
+      <a href="#projects">Engineering Projects</a>
+      <a href="#pko">Engine Research</a>
+      <a href="https://github.com/Dytomic" target="_blank" rel="noopener">Dytomic GitHub Org</a>
+      <a href="https://github.com/elsheraey" target="_blank" rel="noopener">Personal GitHub</a>
+      <a href="https://www.linkedin.com/in/mourad-elsheraey" target="_blank" rel="noopener">LinkedIn</a>
     </nav>
   </div>
   <div class="footer-bottom">
-    <span>&copy; 2021&ndash;2024 Dytomic. All rights reserved.</span>
-    <span>Pirate Raids Online &middot; Tales of Pirates &middot; PKO</span>
+    <span>&copy; 2021&ndash;2024 Mourad Elsheraey / Dytomic Inc.</span>
+    <span>dytomic.github.io</span>
   </div>
 </footer>
 
