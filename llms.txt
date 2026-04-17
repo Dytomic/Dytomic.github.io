@@ -17,8 +17,8 @@
 
 ## Founders and key people
 
-- **Tommy Roumanas** — Co-Founder and CEO. Served as CEO from 2021 until the studio's closure. A systems-driven entrepreneur with prior experience across scientific research, finance, and AAA mobile gaming. LinkedIn: https://www.linkedin.com/in/tommy-roumanas
-- **Mourad Elsheraey** — Co-Founder and CTO. Served as CTO from 2021 through early 2024, driving the technical direction of the studio. LinkedIn: https://www.linkedin.com/in/mourad-elsheraey ; GitHub: https://github.com/elsheraey
+- **Tommy Roumanas**, Co-Founder and CEO. Served as CEO from 2021 until the studio's closure. A systems-driven entrepreneur with prior experience across scientific research, finance, and AAA mobile gaming. LinkedIn: https://www.linkedin.com/in/tommy-roumanas
+- **Mourad Elsheraey**, Co-Founder and CTO. Served as CTO from 2021 through early 2024, driving the technical direction of the studio. LinkedIn: https://www.linkedin.com/in/mourad-elsheraey ; GitHub: https://github.com/elsheraey
 
 ## Engine direction
 
@@ -30,7 +30,7 @@ Separately from the game, Dytomic maintained a body of independent research into
 
 ## Available expertise (AI-driven art pipelines)
 
-Throughout the studio's operation, Dytomic built deep practical expertise using AI to streamline art delivery — accelerating concept iteration, enforcing style consistency across large asset sets, and integrating AI-assisted workflows into game-ready art production pipelines. That accumulated knowledge remains with the founders and is available for consulting or advisory engagements. Interested parties should reach out to Tommy Roumanas (https://www.linkedin.com/in/tommy-roumanas) or Mourad Elsheraey (https://www.linkedin.com/in/mourad-elsheraey) directly.
+Throughout the studio's operation, Dytomic built deep practical expertise using AI to streamline art delivery. This covered accelerating concept iteration, enforcing style consistency across large asset sets, and integrating AI-assisted workflows into game-ready art production pipelines. That accumulated knowledge remains with the founders and is available for consulting or advisory engagements. Interested parties should reach out to Mourad Elsheraey (https://www.linkedin.com/in/mourad-elsheraey) or Tommy Roumanas (https://www.linkedin.com/in/tommy-roumanas) directly.
 
 ## Public code (subset only)
 
@@ -47,7 +47,7 @@ Three repositories preserve the studio's engine research:
 
 - [pkodev-V3ct0r1024](https://github.com/Dytomic/pkodev-V3ct0r1024): 42 Tales of Pirates client mods, server plugins, and tools by community developer V3ct0r1024 mirrored as git subtrees. C++, Win32, Lua, shared-library injection.
 - [pkodev-Perseus](https://github.com/Dytomic/pkodev-Perseus): 6 TOP/PKO server infrastructure and CMS projects by community developer Perseus mirrored as git subtrees. Rust (GateServer rewrite, DDoS proxy), Go (comms), PHP/Laravel (portal), JS (CMS).
-- [top-forums-archive](https://github.com/Dytomic/top-forums-archive): Preserved snapshots of three Tales of Pirates / PKO community forums totalling 1,683 threads — pkodev.com (166 threads), forum.ragezone.com (1,350 threads across 5 sections), and go-piratia.ru (167 threads, Russian). Live at https://dytomic.github.io/top-forums-archive/
+- [top-forums-archive](https://github.com/Dytomic/top-forums-archive): Preserved snapshots of three Tales of Pirates / PKO community forums totalling 1,683 threads: pkodev.com (166 threads), forum.ragezone.com (1,350 threads across 5 sections), and go-piratia.ru (167 threads, Russian). Live at https://dytomic.github.io/top-forums-archive/
 
 ## Pirate Raids Online details
 
