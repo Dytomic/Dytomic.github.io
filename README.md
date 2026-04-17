@@ -14,7 +14,7 @@ Live at **[dytomic.github.io](https://dytomic.github.io/)**.
 | Section | Content |
 |---------|---------|
 | **Studio** | About Dytomic. Montreal-based independent game studio (2021&ndash;2024). |
-| **Team** | Founding team contributions: Tommy Roumanas (Co-Founder, CEO), Mourad Elsheraey (Co-Founder, Board Member, CTO). |
+| **Team** | Founding team contributions: Tommy Roumanas (Co-Founder, CEO), Mourad Elsheraey (Co-Founder, CTO). |
 | **Game** | Pirate Raids Online &mdash; pre-production PC MMORPG set in Ascaron. Classless combat, naval gameplay, four Demigod tribes. |
 | **Public Code** | The open-sourced subset of the studio's engineering work: pro-web, pro-splash, ariel, ball-simulation. |
 | **Research Archive** | Preserved research on the Tales of Pirates / PKO engine family. Links to [pkodev-V3ct0r1024](https://github.com/Dytomic/pkodev-V3ct0r1024), [pkodev-Perseus](https://github.com/Dytomic/pkodev-Perseus), and [top-forums-archive](https://github.com/Dytomic/top-forums-archive). |
