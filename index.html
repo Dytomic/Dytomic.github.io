@@ -8,9 +8,8 @@
   <meta name="keywords" content="Dytomic, Pirate Raids Online, PRO MMORPG, Tales of Pirates, PKO, Pirate King Online, MMORPG studio, Montreal game studio, Ascaron, old school MMORPG, game engine research" />
   <link rel="canonical" href="https://dytomic.github.io/" />
 
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="64x64" href="/favicon.png" />
+  <link rel="apple-touch-icon" href="/favicon.png" />
   <link rel="shortcut icon" href="/favicon.png" />
 
   <meta property="og:type" content="website" />
@@ -403,6 +402,54 @@
       color: var(--gold); font-weight: 600;
     }
 
+    /* ── INLINE FORUMS LIST ── */
+    .forums-inline {
+      display: grid; gap: 16px;
+      margin-top: 18px;
+    }
+    .forum-inline {
+      background: rgba(0,0,0,0.35);
+      border: 1px solid var(--rule);
+      border-left: 3px solid var(--gold);
+      padding: 20px 24px; border-radius: 3px;
+    }
+    .forum-inline-head {
+      display: flex; justify-content: space-between; align-items: baseline;
+      flex-wrap: wrap; gap: 12px; margin-bottom: 8px;
+    }
+    .forum-inline-name {
+      font-family: 'Cormorant Garamond', serif; font-weight: 700;
+      font-size: 1.35rem; color: var(--white);
+    }
+    .forum-inline-source {
+      font-family: 'JetBrains Mono', monospace; font-size: 11px;
+      color: var(--gold); letter-spacing: 0.05em;
+    }
+    .forum-inline p {
+      font-family: 'Raleway', sans-serif; font-size: 14px; line-height: 1.65;
+      color: var(--off-white); opacity: 0.85; margin-bottom: 10px;
+    }
+    .forum-inline-stats {
+      display: flex; gap: 18px; flex-wrap: wrap; margin: 8px 0 12px;
+      font-family: 'JetBrains Mono', monospace; font-size: 11px;
+      color: var(--off-white); opacity: 0.7;
+    }
+    .forum-inline-stats strong { color: var(--gold); font-weight: 600; }
+    .forum-inline-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .forum-inline-links a {
+      display: inline-flex; align-items: center;
+      font-family: 'Raleway', sans-serif; font-weight: 700;
+      font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase;
+      padding: 6px 14px; border: 1px solid var(--gold);
+      border-radius: 3px; color: var(--gold);
+      transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+    }
+    .forum-inline-links a:hover { background: var(--gold); color: var(--bg); filter: none; }
+    .forum-inline-links a.secondary {
+      border-color: var(--rule); color: var(--off-white); opacity: 0.75;
+    }
+    .forum-inline-links a.secondary:hover { background: rgba(255,255,255,0.06); color: var(--white); opacity: 1; }
+
     /* ── NOTICE ── */
     .notice {
       background: rgba(239,157,23,0.08);
@@ -774,7 +821,7 @@
 
         <article class="project">
           <div class="project-head">
-            <h3><a href="https://dytomic.github.io/top-forums-archive/" target="_blank" rel="noopener">top-forums-archive &rarr;</a></h3>
+            <h3><a href="https://github.com/Dytomic/top-forums-archive" target="_blank" rel="noopener">top-forums-archive &rarr;</a></h3>
             <span class="project-role">3 Forums &middot; Community Archive</span>
           </div>
           <div class="stack">
@@ -782,7 +829,60 @@
             <span class="tag">Markdown</span>
             <span class="tag">Scrapling</span>
           </div>
-          <p>Preserved snapshots of three Tales of Pirates / PKO community forums: <strong>pkodev.com</strong> (166 threads), <strong>forum.ragezone.com</strong> (1,350 threads across 5 sections), and <strong>go-piratia.ru</strong> (167 threads, Russian). Stored in both original HTML and Markdown. Captured to preserve years of private-server development guides, mod releases, and engine reverse-engineering notes as community forums periodically go offline. <a href="https://dytomic.github.io/top-forums-archive/" target="_blank" rel="noopener">Browse the archive &rarr;</a></p>
+          <p>Preserved snapshots of three Tales of Pirates / PKO community forums, captured to preserve years of private-server development guides, mod releases, and engine reverse-engineering notes as community forums periodically go offline. Each forum is stored in both original HTML (unmodified) and Markdown (for easy search and reference).</p>
+
+          <div class="forums-inline">
+
+            <div class="forum-inline">
+              <div class="forum-inline-head">
+                <div class="forum-inline-name">PKO DEV</div>
+                <div class="forum-inline-source">pkodev.com</div>
+              </div>
+              <p>Developer-centric forum for the Tales of Pirates / Pirate King Online game engine. Central hub for source code releases, server setup guides, Lua scripting, client modding, and community collaboration around private server development.</p>
+              <div class="forum-inline-stats">
+                <span><strong>166</strong> threads</span>
+                <span><strong>492</strong> messages</span>
+                <span><strong>12</strong> sections</span>
+              </div>
+              <div class="forum-inline-links">
+                <a href="https://dytomic.github.io/top-forums-archive/pkodev/html/_master_index.html" target="_blank" rel="noopener">Browse HTML</a>
+                <a href="https://dytomic.github.io/top-forums-archive/pkodev/index.md" class="secondary" target="_blank" rel="noopener">Markdown Index</a>
+              </div>
+            </div>
+
+            <div class="forum-inline">
+              <div class="forum-inline-head">
+                <div class="forum-inline-name">RageZone &mdash; Tales of Pirates</div>
+                <div class="forum-inline-source">forum.ragezone.com</div>
+              </div>
+              <p>The Tales of Pirates subforum on RageZone, a long-running MMO private-server community site. Focused on ToP client and server development, releases, tutorials, and troubleshooting.</p>
+              <div class="forum-inline-stats">
+                <span><strong>1,350</strong> threads</span>
+                <span><strong>5</strong> sections</span>
+              </div>
+              <div class="forum-inline-links">
+                <a href="https://dytomic.github.io/top-forums-archive/ragezone/_index.html" target="_blank" rel="noopener">Browse HTML</a>
+              </div>
+            </div>
+
+            <div class="forum-inline">
+              <div class="forum-inline-head">
+                <div class="forum-inline-name">Go-Piratia</div>
+                <div class="forum-inline-source">go-piratia.ru</div>
+              </div>
+              <p>Russian-language Tales of Pirates / Piratia community forum. Covers development, guides, private-server discussion, releases, and general community topics for the Russian-speaking ToP scene.</p>
+              <div class="forum-inline-stats">
+                <span><strong>167</strong> threads</span>
+                <span><strong>24</strong> sections</span>
+                <span>Russian</span>
+              </div>
+              <div class="forum-inline-links">
+                <a href="https://dytomic.github.io/top-forums-archive/gopiratia/html/_master_index.html" target="_blank" rel="noopener">Browse HTML</a>
+                <a href="https://dytomic.github.io/top-forums-archive/gopiratia/md/_master_index.md" class="secondary" target="_blank" rel="noopener">Markdown Index</a>
+              </div>
+            </div>
+
+          </div>
         </article>
 
       </div>
