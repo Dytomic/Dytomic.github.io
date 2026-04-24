@@ -6,11 +6,6 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://dytomic.github.io/top-forums-archive/</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
     <loc>https://dytomic.github.io/top-forums-archive/pkodev/html/_master_index.html</loc>
     <changefreq>yearly</changefreq>
     <priority>0.6</priority>
