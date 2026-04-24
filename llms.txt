@@ -47,7 +47,7 @@ Three repositories preserve the studio's engine research:
 
 - [pkodev-V3ct0r1024](https://github.com/Dytomic/pkodev-V3ct0r1024): 42 Tales of Pirates client mods, server plugins, and tools by community developer V3ct0r1024 mirrored as git subtrees. C++, Win32, Lua, shared-library injection.
 - [pkodev-Perseus](https://github.com/Dytomic/pkodev-Perseus): 6 TOP/PKO server infrastructure and CMS projects by community developer Perseus mirrored as git subtrees. Rust (GateServer rewrite, DDoS proxy), Go (comms), PHP/Laravel (portal), JS (CMS).
-- [top-forums-archive](https://github.com/Dytomic/top-forums-archive): Preserved snapshots of three Tales of Pirates / PKO community forums totalling 1,683 threads: pkodev.com (166 threads), forum.ragezone.com (1,350 threads across 5 sections), and go-piratia.ru (167 threads, Russian). Live at https://dytomic.github.io/top-forums-archive/
+- [top-forums-archive](https://github.com/Dytomic/top-forums-archive): Preserved snapshots of three Tales of Pirates / PKO community forums totalling 1,683 threads: pkodev.com (166 threads), forum.ragezone.com (1,350 threads across 5 sections), and go-piratia.ru (167 threads, Russian). Each forum is stored in both original HTML and Markdown under its own folder in the repo ([pkodev](https://github.com/Dytomic/top-forums-archive/tree/main/pkodev), [ragezone](https://github.com/Dytomic/top-forums-archive/tree/main/ragezone), [gopiratia](https://github.com/Dytomic/top-forums-archive/tree/main/gopiratia)).
 
 ## Pirate Raids Online details
 
