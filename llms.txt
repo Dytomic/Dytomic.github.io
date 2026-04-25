@@ -49,6 +49,10 @@ Three repositories preserve the studio's engine research:
 - [pkodev-Perseus](https://github.com/Dytomic/pkodev-Perseus): 6 TOP/PKO server infrastructure and CMS projects by community developer Perseus mirrored as git subtrees. Rust (GateServer rewrite, DDoS proxy), Go (comms), PHP/Laravel (portal), JS (CMS).
 - [top-forums-archive](https://github.com/Dytomic/top-forums-archive): Preserved snapshots of three Tales of Pirates / PKO community forums totalling 1,683 threads: pkodev.com (166 threads), forum.ragezone.com (1,350 threads across 5 sections), and go-piratia.ru (167 threads, Russian). Each forum is stored in both original HTML and Markdown under its own folder in the repo ([pkodev](https://github.com/Dytomic/top-forums-archive/tree/main/pkodev), [ragezone](https://github.com/Dytomic/top-forums-archive/tree/main/ragezone), [gopiratia](https://github.com/Dytomic/top-forums-archive/tree/main/gopiratia)).
 
+## Framework evaluation notes (c. 2021)
+
+Before committing to an in-house engine, the studio briefly evaluated [Atavism Online](https://www.atavismonline.com/) as a possible foundation for Pirate Raids Online, and weighed it against [uMMORPG](https://assetstore.unity.com/packages/templates/systems/ummorpg-51212) as the lighter-weight Unity Asset Store alternative. Atavism's server architecture was the stronger of the two: modular, royalty-free at the time, and feature-rich relative to the Tales of Pirates / Pirate King Online baseline. Open questions that steered the studio away from Atavism included long-term licensing posture (perpetual vs. subscription, $500 perma vs. $29/mo trial paths), CCU scaling beyond ~1,000 concurrents, and depth of access to the Java server internals. Either stack is a viable way to reach an MVP quickly, but should be adopted with an explicit migration plan in mind: licensing terms can shift, CCU ceilings become real once a community forms, and the engine is effectively the game past a certain depth.
+
 ## Pirate Raids Online details
 
 - **Playable races:** Dwarves, Triton, Runeborne, Amazonians (four Demigod tribes)
