@@ -774,11 +774,27 @@
   <section>
     <div class="section-inner">
       <div class="shadow-box">
-        <p>This archive preserves research into the <strong>Tales of Pirates / Pirate King Online (PKO)</strong> engine family and its long-running community modification ecosystem. It was a subject of personal and team interest during the studio's operation, and is maintained here as a public reference for researchers of legacy MMORPG engines and private-server communities.</p>
-        <p><strong>Note:</strong> Pirate Raids Online is built on its own in-house engine. It is not derived from, nor technically based on, the Tales of Pirates or PKO engine. This archive exists as independent research and preservation work.</p>
-        <p>Each monorepo is a git-subtree mirror of open-source community developer work, with subtrees that can be pulled independently as the original authors publish updates.</p>
+        <p>This archive collects two strands of pre-production research. The first is a brief evaluation of off-the-shelf MMO frameworks the studio considered before committing to its own engine, captured below as a single note. The second is a body of work mirroring the <strong>Tales of Pirates / Pirate King Online (PKO)</strong> engine family and its long-running community modification ecosystem, maintained here as a public reference for researchers of legacy MMORPG engines and private-server communities.</p>
+        <p><strong>Note:</strong> Pirate Raids Online is built on its own in-house engine. It is not derived from, nor technically based on, Atavism, uMMORPG, the Tales of Pirates engine, or the PKO engine. This archive exists as independent research and preservation work.</p>
+        <p>Each TOP/PKO monorepo below is a git-subtree mirror of open-source community developer work, with subtrees that can be pulled independently as the original authors publish updates.</p>
 
         <article class="project" style="margin-top: 12px;">
+          <div class="project-head">
+            <h3>Framework Evaluation Notes (c. 2021)</h3>
+            <span class="project-role">Atavism &middot; uMMORPG</span>
+          </div>
+          <div class="stack">
+            <span class="tag tag-primary">Atavism Online</span>
+            <span class="tag">uMMORPG</span>
+            <span class="tag">Unity</span>
+            <span class="tag">Java</span>
+          </div>
+          <p>Before committing to an in-house engine, we briefly evaluated <a href="https://www.atavismonline.com/" target="_blank" rel="noopener">Atavism Online</a> as a possible foundation for Pirate Raids Online, and weighed it against <a href="https://assetstore.unity.com/packages/templates/systems/ummorpg-51212" target="_blank" rel="noopener">uMMORPG</a> as the lighter-weight alternative on the Unity Asset Store. uMMORPG was appealing for its simplicity and full source access, but Atavism&rsquo;s server architecture was the stronger of the two for what we had in mind: modular, royalty-free at the time, and feature-rich relative to the Tales of Pirates / Pirate King Online baseline we were working from. Open questions that ultimately steered us away from Atavism included the long-term licensing posture (perpetual vs. subscription, $500 perma vs. $29/mo trial paths), CCU scaling beyond ~1,000 concurrents, and the depth of access to the Java server internals.</p>
+          <p>Reference material we collected during the review: the <a href="https://www.atavismonline.com/made-with-atavism" target="_blank" rel="noopener">Atavism showcase reel</a>, shipped titles such as <a href="http://arcfall.com/" target="_blank" rel="noopener">Arcfall</a> and <a href="https://www.worldofheroes.pl/" target="_blank" rel="noopener">World of Heroes</a>, a <a href="https://youtu.be/PDE4HtuQwhI" target="_blank" rel="noopener">creator interview</a>, and <a href="https://pyre.gg/minimum-requirements-to-run-atavism-mmo-creator-on-pc" target="_blank" rel="noopener">pyre.gg&rsquo;s server-requirements writeup</a>.</p>
+          <p>Our take: either stack is a viable way to get an MVP on its feet quickly and prove the gameplay loop, but you should adopt one knowing you will eventually need a migration plan off it. Licensing terms can shift, CCU ceilings become real once a community forms, and the engine <em>is</em> the game once you pass a certain depth. Start on Atavism (or uMMORPG) if it shortens the runway to a playable build; just don&rsquo;t let &ldquo;temporary&rdquo; become &ldquo;permanent&rdquo; by accident.</p>
+        </article>
+
+        <article class="project">
           <div class="project-head">
             <h3><a href="https://github.com/Dytomic/pkodev-V3ct0r1024" target="_blank" rel="noopener">pkodev-V3ct0r1024 &rarr;</a></h3>
             <span class="project-role">42 Repos &middot; Client + Server Mods</span>
@@ -805,22 +821,6 @@
             <span class="tag">JavaScript</span>
           </div>
           <p>Mirror of the TOP/PKO-related work by community developer Perseus. Contents include a GateServer rewrite, a middleman proxy providing traffic filtering and Linux deployability, a server-communication interface, a client asset converter for glTF workflows, and two private-server CMS projects.</p>
-        </article>
-
-        <article class="project">
-          <div class="project-head">
-            <h3>Framework Evaluation Notes (c. 2021)</h3>
-            <span class="project-role">Atavism &middot; uMMORPG</span>
-          </div>
-          <div class="stack">
-            <span class="tag tag-primary">Atavism Online</span>
-            <span class="tag">uMMORPG</span>
-            <span class="tag">Unity</span>
-            <span class="tag">Java</span>
-          </div>
-          <p>Before committing to an in-house engine, we briefly evaluated <a href="https://www.atavismonline.com/" target="_blank" rel="noopener">Atavism Online</a> as a possible foundation for Pirate Raids Online, and weighed it against <a href="https://assetstore.unity.com/packages/templates/systems/ummorpg-51212" target="_blank" rel="noopener">uMMORPG</a> as the lighter-weight alternative on the Unity Asset Store. uMMORPG was appealing for its simplicity and full source access, but Atavism&rsquo;s server architecture was the stronger of the two for what we had in mind: modular, royalty-free at the time, and feature-rich relative to the Tales of Pirates / Pirate King Online baseline we were working from. Open questions that ultimately steered us away from Atavism included the long-term licensing posture (perpetual vs. subscription, $500 perma vs. $29/mo trial paths), CCU scaling beyond ~1,000 concurrents, and the depth of access to the Java server internals.</p>
-          <p>Reference material we collected during the review: the <a href="https://www.atavismonline.com/made-with-atavism" target="_blank" rel="noopener">Atavism showcase reel</a>, shipped titles such as <a href="http://arcfall.com/" target="_blank" rel="noopener">Arcfall</a> and <a href="https://www.worldofheroes.pl/" target="_blank" rel="noopener">World of Heroes</a>, a <a href="https://youtu.be/PDE4HtuQwhI" target="_blank" rel="noopener">creator interview</a>, and <a href="https://pyre.gg/minimum-requirements-to-run-atavism-mmo-creator-on-pc" target="_blank" rel="noopener">pyre.gg&rsquo;s server-requirements writeup</a>.</p>
-          <p>Our take: either stack is a viable way to get an MVP on its feet quickly and prove the gameplay loop, but you should adopt one knowing you will eventually need a migration plan off it. Licensing terms can shift, CCU ceilings become real once a community forms, and the engine <em>is</em> the game once you pass a certain depth. Start on Atavism (or uMMORPG) if it shortens the runway to a playable build; just don&rsquo;t let &ldquo;temporary&rdquo; become &ldquo;permanent&rdquo; by accident.</p>
         </article>
 
         <article class="project">
