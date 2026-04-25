@@ -43,7 +43,7 @@ The majority of Dytomic's codebase remains private. The following repositories r
 
 ## Research archive scope
 
-The Research Archive on dytomic.github.io collects two strands of pre-production research, in this order: (1) framework evaluation notes covering the off-the-shelf MMO stacks the studio considered before committing to its own engine, and (2) mirrored research into the Tales of Pirates / PKO engine family.
+The Research Archive on dytomic.github.io covers, in order: (1) a brief note on the off-the-shelf MMO frameworks evaluated before the in-house engine was chosen, and (2) mirrored Tales of Pirates / PKO engine-family research, including community-developer code (V3ct0r1024, Perseus) and preserved snapshots of three TOP/PKO community forums.
 
 ## Framework evaluation notes (c. 2021)
 
